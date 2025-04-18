@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIỎ HÀNG</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 20px; background-image: url('https://cdn11.dienmaycholon.vn/filewebdmclnew/public/userupload/files/news/may-lanh/may-lanh-comfee-1-hp-cfs-10fwff-v-so-huu-thiet-ke-hien-dai-tinh-te.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 100vh; ">
+    <h1 style="color: #fff; margin-bottom: 20px; text-align: center; background-color: #006400; border: 3px solid #004d00; padding: 15px; border-radius: 6px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">Giỏ Hàng</h1>
+    <div style="display: flex; justify-content: space-between; gap: 20px; max-width: 1200px; margin: 0 auto;">
+        <div style="flex: 1; background-color: #fff; padding: 20px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <h2 style="color: #fff; text-align: center; margin-bottom: 20px; background-color: #006400; border: 2px solid #004d00; padding: 10px; border-radius: 4px;">Nhận hàng tại nhà</h2>
+            <form id="form-home">
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Họ và tên <span style="color: red;">*</span></label>
+                    <input type="text" id="name-home" required style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Số điện thoại <span style="color: red;">*</span></label>
+                    <input type="tel" id="phone-home" required style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Email <span style="color: red;">*</span></label>
+                    <input type="email" id="email-home" required style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Tỉnh/Thành Phố <span style="color: red;">*</span></label>
+                    <select id="city-home" required style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                        <option value="">Chọn Tỉnh/Thành Phố</option>
+                        <option value="TP.HCM">TP.HCM</option>
+                        <option value="TP.Hà Nội">TP.Hà Nội</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Quận/Huyện <span style="color: red;">*</span></label>
+                    <select id="district-home" required style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                        <option value="">Chọn Quận/Huyện</option>
+                        <option value="Quận 1">Quận 1</option>
+                        <option value="Quận 3">Quận 3</option>
+                        <option value="Quận 4">Quận 4</option>
+                        <option value="Quận 5">Quận 5</option>
+                        <option value="Quận 6">Quận 6</option>
+                        <option value="Quận 7">Quận 7</option>
+                        <option value="Quận 8">Quận 8</option>
+                        <option value="Quận 10">Quận 10</option>
+                        <option value="Quận 11">Quận 11</option>
+                        <option value="Quận 12">Quận 12</option>
+                        <option value="Quận Tân Bình">Quận Tân Bình</option>
+                        <option value="Quận Bình Tân">Quận Bình Tân</option>
+                        <option value="Quận Bình Thạnh">Quận Bình Thạnh</option>
+                        <option value="Quận Tân Phú">Quận Tân Phú</option>
+                        <option value="Quận Gò Vấp">Quận Gò Vấp</option>
+                        <option value="Quận Phú Nhuận">Quận Phú Nhuận</option>
+                        <option value="Huyện Bình Chánh">Huyện Bình Chánh</option>
+                        <option value="Huyện Hóc Môn">Huyện Hóc Môn</option>
+                        <option value="Huyện Cần Giờ">Huyện Cần Giờ</option>
+                        <option value="Huyện Củ Chi">Huyện Củ Chi</option>
+                        <option value="Huyện Nhà Bè">Huyện Nhà Bè</option>
+                        <option value="Thành phố Thủ Đức">Thành phố Thủ Đức</option>
+                        <option value="Quận Ba Đình">Quận Ba Đình</option>
+                        <option value="Quận Hoàn Kiếm">Quận Hoàn Kiếm</option>
+                        <option value="Quận Đống Đa">Quận Đống Đa</option>
+                        <option value="Quận Hai Bà Trưng">Quận Hai Bà Trưng</option>
+                        <option value="Quận Hoàng Mai">Quận Hoàng Mai</option>
+                        <option value="Quận Thanh Xuân">Quận Thanh Xuân</option>
+                        <option value="Quận Long Biên">Quận Long Biên</option>
+                        <option value="Quận Nam Từ Liêm">Quận Nam Từ Liêm</option>
+                        <option value="Quận Bắc Từ Liêm">Quận Bắc Từ Liêm</option>
+                        <option value="Quận Tây Hồ">Quận Tây Hồ</option>
+                        <option value="Quận Cầu Giấy">Quận Cầu Giấy</option>
+                        <option value="Quận Hà Đông">Quận Hà Đông</option>
+                        <option value="Huyện Ba Vì">Huyện Ba Vì</option>
+                        <option value="Huyện Chương Mỹ">Huyện Chương Mỹ</option>
+                        <option value="Huyện Đan Phượng">Huyện Đan Phượng</option>
+                        <option value="Huyện Đông Anh">Huyện Đông Anh</option>
+                        <option value="Huyện Gia Lâm">Huyện Gia Lâm</option>
+                        <option value="Huyện Hoài Đức">Huyện Hoài Đức</option>
+                        <option value="Huyện Mê Linh">Huyện Mê Linh</option>
+                        <option value="Huyện Mỹ Đức">Huyện Mỹ Đức</option>
+                        <option value="Huyện Phú Xuyên">Huyện Phú Xuyên</option>
+                        <option value="Huyện Phúc Thọ">Huyện Phúc Thọ</option>
+                        <option value="Huyện Quốc Oai">Huyện Quốc Oai</option>
+                        <option value="Huyện Sóc Sơn">Huyện Sóc Sơn</option>
+                        <option value="Huyện Thạch Thất">Huyện Thạch Thất</option>
+                        <option value="Huyện Thanh Oai">Huyện Thanh Oai</option>
+                        <option value="Huyện Thanh Trì">Huyện Thanh Trì</option>
+                        <option value="Huyện Thường Tín">Huyện Thường Tín</option>
+                        <option value="Huyện Ứng Hòa">Huyện Ứng Hòa</option>
+                        <option value="Thị xã Sơn Tây">Thị xã Sơn Tây</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Phường/Xã <span style="color: red;">*</span></label>
+                    <select id="ward-home" required style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                        <option value="">Chọn Phường/Xã</option>
+                        <option value="Phường/Xã 1">Phường/Xã tương ứng</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Số nhà/Tên đường <span style="color: red;">*</span></label>
+                    <input type="text" id="address-home" required style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Để lại lời nhắn (Không bắt buộc)</label>
+                    <textarea id="message-home" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; resize: vertical;"></textarea>
+                </div>
+                <h3 style="color: #333; margin-bottom: 15px;">Chọn phương thức thanh toán</h3>
+                <div style="display: flex; gap: 20px; margin-bottom: 15px;">
+                    <div style="flex: 1;">
+                        <label style="display: block; margin-bottom: 5px; color: #333;">
+                            <input type="radio" name="payment-home" value="cod" id="payment-cod-home" style="margin-right: 5px;" required> Thanh toán khi nhận hàng
+                        </label>
+                    </div>
+                    <div style="flex: 1;">
+                        <label style="display: block; margin-bottom: 5px; color: #333;">
+                            <input type="radio" name="payment-home" value="credit" id="payment-credit-home" style="margin-right: 5px;" required> Thanh toán bằng thẻ tín dụng
+                        </label>
+                    </div>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Số thẻ<span style="color: red;">*</span></label>
+                    <input type="text" id="card-number-home" required style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Họ và tên chủ thẻ<span style="color: red;">*</span></label>
+                    <input type="text" id="card-name-home" required style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Số CVV<span style="color: red;">*</span></label>
+                    <input type="text" id="card-cvv-home" required style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                </div>
+                <div style="text-align: center;">
+                    <button type="submit" id="checkout-home" style="background-color: #d0021b; color: #fff; border: none; padding: 10px 20px; cursor: pointer; border-radius: 4px; font-size: 16px;">Thanh toán</button>
+                </div>
+            </form>
+        </div>
+        <div style="flex: 1; background-color: #fff; padding: 20px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <h2 style="color: #fff; text-align: center; margin-bottom: 20px; background-color: #006400; border: 2px solid #004d00; padding: 10px; border-radius: 4px;">Nhận hàng tại trung tâm</h2>
+            <form id="form-center">
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Họ và tên <span style="color: red;">*</span></label>
+                    <input type="text" id="name-center" required style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Số điện thoại <span style="color: red;">*</span></label>
+                    <input type="tel" id="phone-center" required style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Email <span style="color: red;">*</span></label>
+                    <input type="email" id="email-center" required style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Tỉnh/Thành Phố <span style="color: red;">*</span></label>
+                    <select id="city-center" required style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                        <option value="">Chọn Tỉnh/Thành Phố</option>
+                        <option value="TP.HCM">TP.HCM</option>
+                        <option value="TP.Hà Nội">TP.Hà Nội</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Quận/Huyện <span style="color: red;">*</span></label>
+                    <select id="district-center" required style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                        <option value="">Chọn Quận/Huyện</option>
+                        <option value="Quận 1">Quận 1</option>
+                        <option value="Quận 3">Quận 3</option>
+                        <option value="Quận 4">Quận 4</option>
+                        <option value="Quận 5">Quận 5</option>
+                        <option value="Quận 6">Quận 6</option>
+                        <option value="Quận 7">Quận 7</option>
+                        <option value="Quận 8">Quận 8</option>
+                        <option value="Quận 10">Quận 10</option>
+                        <option value="Quận 11">Quận 11</option>
+                        <option value="Quận 12">Quận 12</option>
+                        <option value="Quận Tân Bình">Quận Tân Bình</option>
+                        <option value="Quận Bình Tân">Quận Bình Tân</option>
+                        <option value="Quận Bình Thạnh">Quận Bình Thạnh</option>
+                        <option value="Quận Tân Phú">Quận Tân Phú</option>
+                        <option value="Quận Gò Vấp">Quận Gò Vấp</option>
+                        <option value="Quận Phú Nhuận">Quận Phú Nhuận</option>
+                        <option value="Huyện Bình Chánh">Huyện Bình Chánh</option>
+                        <option value="Huyện Hóc Môn">Huyện Hóc Môn</option>
+                        <option value="Huyện Cần Giờ">Huyện Cần Giờ</option>
+                        <option value="Huyện Củ Chi">Huyện Củ Chi</option>
+                        <option value="Huyện Nhà Bè">Huyện Nhà Bè</option>
+                        <option value="Thành phố Thủ Đức">Thành phố Thủ Đức</option>
+                        <option value="Quận Ba Đình">Quận Ba Đình</option>
+                        <option value="Quận Hoàn Kiếm">Quận Hoàn Kiếm</option>
+                        <option value="Quận Đống Đa">Quận Đống Đa</option>
+                        <option value="Quận Hai Bà Trưng">Quận Hai Bà Trưng</option>
+                        <option value="Quận Hoàng Mai">Quận Hoàng Mai</option>
+                        <option value="Quận Thanh Xuân">Quận Thanh Xuân</option>
+                        <option value="Quận Long Biên">Quận Long Biên</option>
+                        <option value="Quận Nam Từ Liêm">Quận Nam Từ Liêm</option>
+                        <option value="Quận Bắc Từ Liêm">Quận Bắc Từ Liêm</option>
+                        <option value="Quận Tây Hồ">Quận Tây Hồ</option>
+                        <option value="Quận Cầu Giấy">Quận Cầu Giấy</option>
+                        <option value="Quận Hà Đông">Quận Hà Đông</option>
+                        <option value="Huyện Ba Vì">Huyện Ba Vì</option>
+                        <option value="Huyện Chương Mỹ">Huyện Chương Mỹ</option>
+                        <option value="Huyện Đan Phượng">Huyện Đan Phượng</option>
+                        <option value="Huyện Đông Anh">Huyện Đông Anh</option>
+                        <option value="Huyện Gia Lâm">Huyện Gia Lâm</option>
+                        <option value="Huyện Hoài Đức">Huyện Hoài Đức</option>
+                        <option value="Huyện Mê Linh">Huyện Mê Linh</option>
+                        <option value="Huyện Mỹ Đức">Huyện Mỹ Đức</option>
+                        <option value="Huyện Phú Xuyên">Huyện Phú Xuyên</option>
+                        <option value="Huyện Phúc Thọ">Huyện Phúc Thọ</option>
+                        <option value="Huyện Quốc Oai">Huyện Quốc Oai</option>
+                        <option value="Huyện Sóc Sơn">Huyện Sóc Sơn</option>
+                        <option value="Huyện Thạch Thất">Huyện Thạch Thất</option>
+                        <option value="Huyện Thanh Oai">Huyện Thanh Oai</option>
+                        <option value="Huyện Thanh Trì">Huyện Thanh Trì</option>
+                        <option value="Huyện Thường Tín">Huyện Thường Tín</option>
+                        <option value="Huyện Ứng Hòa">Huyện Ứng Hòa</option>
+                        <option value="Thị xã Sơn Tây">Thị xã Sơn Tây</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Phường/Xã <span style="color: red;">*</span></label>
+                    <select id="ward-center" required style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                        <option value="">Chọn Phường/Xã</option>
+                        <option value="Phường/Xã 1">Phường/Xã tương ứng</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Số nhà/Tên đường <span style="color: red;">*</span></label>
+                    <input type="text" id="address-center" required style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Để lại lời nhắn (Không bắt buộc)</label>
+                    <textarea id="message-center" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; resize: vertical;"></textarea>
+                </div>
+                <h3 style="color: #333; margin-bottom: 15px;">Chọn phương thức thanh toán</h3>
+                <div style="display: flex; gap: 20px; margin-bottom: 15px;">
+                    <div style="flex: 1;">
+                        <label style="display: block; margin-bottom: 5px; color: #333;">
+                            <input type="radio" name="payment-center" value="cod" id="payment-cod-center" style="margin-right: 5px;" required> Thanh toán khi nhận hàng
+                        </label>
+                    </div>
+                    <div style="flex: 1;">
+                        <label style="display: block; margin-bottom: 5px; color: #333;">
+                            <input type="radio" name="payment-center" value="credit" id="payment-credit-center" style="margin-right: 5px;" required> Thanh toán bằng thẻ tín dụng
+                        </label>
+                    </div>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Số thẻ<span style="color: red;">*</span></label>
+                    <input type="text" id="card-number-center" required style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Họ và tên chủ thẻ<span style="color: red;">*</span></label>
+                    <input type="text" id="card-name-center" required style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Số CVV<span style="color: red;">*</span></label>
+                    <input type="text" id="card-cvv-center" required style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+                </div>
+                <div style="text-align: center;">
+                    <button type="submit" id="checkout-center" style="background-color: #d0021b; color: #fff; border: none; padding: 10px 20px; cursor: pointer; border-radius: 4px; font-size: 16px;">Thanh toán</button>
+                </div>
+            </form>
+        </div>
+        <div style="flex: 1; background-color: #fff; padding: 20px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <h2 style="color: #fff; text-align: center; margin-bottom: 20px; background-color: #006400; border: 2px solid #004d00; padding: 10px; border-radius: 4px;">Giỏ hàng của bạn</h2>
+            <div style="text-align: center; margin-bottom: 20px;">
+                <img src="https://phukiencongnghe365.com/wp-content/uploads/2021/08/icon-gio-hang-chuan.jpg" alt="Giỏ hàng" style="max-width: 100px; height: auto;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
